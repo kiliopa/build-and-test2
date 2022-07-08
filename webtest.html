@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Build and test 1</h1>
+
+
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Welcome to my circleCI";
+unitTestPrint();
+}
+
+function unitTestPrint(){
+    var testing = 'Welcome to my circleCI"
+    if (document.getElementById("demo").innerHTML === testing){
+        console.log("Test Succeed")
+    }
+    else throw Error ("Test Failed On MyFunction")
+}
+</script>
+
+</body>
+</html>
